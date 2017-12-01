@@ -317,6 +317,7 @@ button:hover {
   background: #ac1122;
 }
 button:active {
+	color: white;
   letter-spacing: 2px;
 }
 
