@@ -177,23 +177,6 @@ a.demo--current {
 	pointer-events: none;
 	color: var(--color-link-hover);
 }
-
-/* Top Navigation Style */
-.codrops-links {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	margin: 0 1em 0 0;
-	text-align: center;
-	white-space: nowrap;
-}
-
-.codrops-icon {
-	display: inline-block;
-	margin: 0.15em;
-	padding: 0.25em;
-}
-
 /* Canvas positions */
 .content__inner {
 	grid-area: 1 / 1 / 1 / 1;
@@ -308,3 +291,32 @@ a.demo--current {
 		margin: 0;
 	}
 }
+.btn{
+	color: white;
+}
+button {
+	margin-top: 30px;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #ac1122;
+  color: #ac1122;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+button:hover {
+  color: white;
+  background: #ac1122;
+}
+button:active {
+  letter-spacing: 2px;
+}
+

@@ -4,9 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Website</title>
-		<meta name="description" content="A collection of decorative animated background shapes powered by WebGL and TweenMax." />
-		<meta name="keywords" content="webgl, background, shape, web design, web development, tweenmax, gsap, animation" />
-		<meta name="author" content="Louis Hoebregts for Codrops" />
+		<meta name="description" content="Web Studio" />
+		<meta name="keywords" content="web, website, dev, web design, web development, create website, bite byte, animation" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Playfair+Display" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
@@ -16,19 +15,6 @@
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 	<body class="demo-1">
-		<svg class="hidden">
-			<symbol id="icon-github" viewBox="0 0 32.6 31.8">
-				<title>github</title>
-				<path d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"/>
-			</symbol>
-		</svg>
-		<main>
-			<div class="content content--fixed">
-				<header class="codrops-header">
-					<h1 class="codrops-header__title">Contact</h1>
-				</header>
-				<a class="github" href="https://github.com/maksymko658" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
-			</div>
 			<div class="content">
 				<canvas class="scene scene--full" id="scene"></canvas>
 				<script type="x-shader/x-vertex" id="wrapVertexShader">
@@ -53,10 +39,14 @@
 					}
 				</script>
 				<div class="content__inner">
-					<h2 class="content__title">Information</h2>
-					<h3 class="content__subtitle">Web Developer</h2>
+					<h2 class="content__title">Bite Byte </h2>
+					<h3 class="content__subtitle">
+					We are solving your problems
+				</h2>
+				<button id="button"><a class="btn" href="#">Explore</a></button>
 				</div>
 			</div>
+
 		</main>
 		<script src="js/demo.js"></script>
 		<script src="js/three.min.js"></script>
