@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle');
+
+
+
 body {
   font-family: "Montserrat", "Open Sans", sans-serif; 
 }
@@ -89,6 +94,8 @@ header h1:hover {
 }
 
 .date {
+  font-family: 'Abril Fatface', cursive;
+
   text-align: center;
   font-size: 2rem;
   color: #2C3E50;
@@ -143,8 +150,12 @@ footer {
   padding-bottom: .3rem;
   text-align: center;
   color: #ECF0F1; 
+  padding-bottom: 5rem;
 }
-
+.intro{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 2rem;
+}
 .footer__top {
   display: -webkit-box;
   display: -webkit-flex;
