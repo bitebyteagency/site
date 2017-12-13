@@ -1,16 +1,15 @@
-.demo-1 {
+.demo-5 {
 	--color-text: #fff;
-	--color-bg: #000;
-	--color-link: #fff;
-	--color-link-hover: #ac1122;
+	--color-bg: #0F1617;
+	--color-link: #4dc4a8;
+	--color-link-hover: #333;
 	--color-info: #ac1122;
 	--color-title: #fff;
 	--color-subtitle: #fff;
-	--color-subtitle-bg: #ac1122;
+    --color-subtitle-bg: #4dc4a8;
 }
 
 .content__title {
-	font-family: 'Playfair Display', serif;
 	font-size: 10vw;
 	font-weight: normal;
 	color: var(--color-title);
@@ -34,9 +33,9 @@
 
 @media screen and (max-width: 55em) {
 	.content__title {
-		font-size: 3em;
+		font-size: 3.5em;
 	}
 	.content__subtitle {
-		font-size: 0.65em;
+		font-size: 0.85em;
 	}
 }

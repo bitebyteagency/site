@@ -1,0 +1,109 @@
+.glitch-btn {
+  position: relative;
+  border: 3px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 30px;
+  z-index: 0;
+}
+.glitch-btn span {
+  position: relative;
+  display: inline-block;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: -webkit-transform .1s ease;
+  transition: -webkit-transform .1s ease;
+  transition: transform .1s ease;
+  transition: transform .1s ease, -webkit-transform .1s ease;
+}
+.glitch-btn:before, .glitch-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.glitch-btn:after {
+  border: 3px solid #f0f;
+  z-index: -2;
+}
+.glitch-btn:before {
+  border: 3px solid #0ff;
+  z-index: -1;
+}
+.glitch-btn:hover {
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+.glitch-btn:hover:before {
+  -webkit-animation: glitch-btn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+          animation: glitch-btn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  opacity: 1;
+}
+.glitch-btn:hover:after {
+  -webkit-animation: glitch-btn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+          animation: glitch-btn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  opacity: 1;
+}
+.glitch-btn:hover span {
+  position: relative;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+@-webkit-keyframes glitch-btn {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes glitch-btn {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}

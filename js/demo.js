@@ -9,5 +9,5 @@
  * http://www.codrops.com
  */
 {
-	setTimeout(() => document.body.classList.add('render'), 1300);
+	setTimeout(() => document.body.classList.add('render'), 2000);
 }

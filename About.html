@@ -3,106 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <title>About</title>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
       <link rel="stylesheet" href="css/About.css">
-
-  
+      <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/services.css">
+      <link rel="stylesheet" type="text/css" href="css/btn.css">
 </head>
-
 <body>
-  <header>
-  <div class="container">
-    <h1 class="scroll"><span>Explore</span></h1>    
+<nav class="navbar  navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header col-md-4 ">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand">Bite Byte</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#showcase">Home</a></li>
+                    <li><a href="#section-f">Projects</a></li>
+                    <li><a href="#">About us</a></li>
+
+                    <button type="button" class="hidden-sm" data-toggle="modal" data-target="#exampleModal" id="signIn">Contact</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Header -->
+  <!-- Header Showcase -->
+
+<header id="showcase" class="grid">
+  <div class="bg-image"></div>
+  <div class="content-wrap">
+    <h1>Welcome to Bite Byte</h1>
+    <p>We develop internet solutions of various difficulty, including options that help your business move towards success.</p>
   </div>
 </header>
 
-<section class="timeline">
-  <div class="container">
-    <h2>Get to know us a little better.</h2>
-    <hr>
-
-    <div class="row timeline__content animate">
-      <div class="container intro">
-        <p class="text-center">
-          We are excited about each new challenge.
-          <p class="text-center"> With our innovative ideas we contribute to the future of technology.</p>
-		<p class="text-center">When we develop a new product, we first think about our customers.</p>
-		<p class="text-center"> We anticipate their needs, respect their ideas and create a better tomorrow together with them.</p>
-        </p>
-      </div>  
+<!-- Main Area -->
+<main id="main">
+  <section id="section-c" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">Thinking about a new project?</h2>
+      <p>Stop thinking, just appreciate our projects and write us a message</p>
     </div>
-
-
-    <div class="row timeline__content animate">
-      <div class="col-md-4 date">Long-term relationship</div>
-      <div class="col-md-8 description">
-        <p>
-          Development isn’t a service - it’s a way of living. It’s that part of your business that is always in view. Of your customers, of your partners, your employees, your family. Of you. That’s why hit-and-run is never an option. 
-      </div>  
+  </section>
+  <!-- Section D -->
+  <section id="section-d" class="grid">
+    <div class="box">
+      <h2 class="content-title">Projects</h2>
+      <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+      <p class="boxpF">Here you can explore some templates and last works.</p>
+      <br>
+      <a class="asl" href="#" target="_blank">Explore</a>
     </div>
-
-
-    <div class="row timeline__content animate">
-      <div class="col-md-4 date">We Can Give Advice</div>
-      <div class="col-md-8 description">
-        <p>
-          We call the reason why people come to the site a ‘user need’. Answering user needs is the fundamental principle on which we develop digital advice.
-		We use data and research to discover user needs and design content or create tools to fulfil them.
-        </p>
-      </div>
+    <div class="box">
+      <h2 class="content-title">Upwork</h2>
+      <i class="fa fa-building fa-4x" aria-hidden="true"></i>
+      <p class="boxpS">Visit our Upwork account to work together</p>  
+      <br>
+      <a class="asl" href="https://www.upwork.com/agencies/~0131e56b512554d15e" target="_blank">Visit</a>    
     </div>
+  </section>
 
-    <div class="row timeline__content animate">
-      <div class="col-md-4 date">We Write Code That Works</div>
-      <div class="col-md-8 description">
-        <p>
-         We do not just create websites, we create a connection between people and the world. We are resourceful and creative. We love to innovate.
-		We believe that imagination has no limits. We are always a step forward in the development of new technologies.
-        </p>
-      </div>
+  <!-- Section C -->
+  <section id="section-c" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">We handle all of your digital needs</h2>
     </div>
+  </section>
+</main>
 
-
-    <div class="row timeline__content animate">
-      <div class="col-md-4 date">We Deliver On Time</div>
-      <div class="col-md-8 description">
-        <p>
-          We know that time is money in business, so we set realistic deadlines (for ourselves and for our clients) and stick to them. We communicate constantly with our clients to give them updates as we progress and get projects launched by the agreed launch date.
-        </p>
-      </div>
+<!-- Footer -->
+  <section class="container-fluid">
+<div id="projectsApp">
+  
+  <div class="projects" :id="project.ID" v-for="project in projects" :style="{ backgroundImage: 'url(' + project.bImage + ')' }" v-on:click="selectProjects(project.ID)">
+    <h3 class="beforeTitle"> {{ project.category }}</h3>
+    <div class="info">
+      <h1 class="fadeTitle"> {{ project.category }}</h1>
+      <hr>
     </div>
-
+    <p class="backArrow"><i class="fa fa-angle-double-left" aria-hidden="true"></i></p>
   </div>
+  
+
+  <div class="selectedArea">
+    <h1 :style="{ backgroundImage: 'url(' + highlightedContent.bImage + ')' }"><span>{{ highlightedContent.category }}</span></h1>
+    <div v-html="highlightedContent.copy" class="copyArea fadeIn"></div>
+  </div>
+
+</div>
 </section>
 
-<section class="quote">
-  <div class="container">
-    <p>
-      Don't go with the flow.<br><span>Be the flow with us.</span>
-    </p>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="row footer__top">
-      <div class="col-12 col-md-7">
-        <a class="btn" href="#">Хуяк</a>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      <p><a target="_blank" href="mailto:bitebyteagency@gmail.com">bitebyteagency@gmail.com</a></p>
+      <a href="http://facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;
+        <a href="http://facebook.com/"><i class="fa fa-instagram fa-2x"></i></a>&nbsp;
+        <a href="http://facebook.com/"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;
       </div>
+
     </div>
   </div>
-</footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 
-    <script  src="index.js"></script>
-
+  <script src="js/services.js"></script>
+  <script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+  </script>
 </body>
 </html>
